@@ -1,0 +1,9 @@
+.nav {
+    width: 200px;
+    background: brown;
+    position: fixed;
+    height: 100%;
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px black;
+    z-index: 100;
+}

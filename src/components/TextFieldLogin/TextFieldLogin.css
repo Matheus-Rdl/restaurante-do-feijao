@@ -1,0 +1,18 @@
+.textFieldLogin{
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0;
+}
+
+.textFieldLogin label{
+    font-size: 20px;
+}
+
+.textFieldLogin input{
+    padding: 16px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 16px;
+    border: none;
+    margin-top: 8px;
+}

@@ -1,0 +1,20 @@
+.div-login{
+  width: 60%;
+  position: fixed;
+  height: 100vh;
+  background-color: brown;
+  box-shadow: 1px 1px 5px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.div-login .title-login{
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.btn-login{
+
+}
