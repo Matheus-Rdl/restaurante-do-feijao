@@ -1,15 +1,20 @@
 import NavSideBar from "./components/NavSideBar";
 import "./App.css";
-import Products from "./components/Products";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login.js";
+import Home from "./pages/Home.js";
+import Orders from "./pages/Orders.js";
+import Header from "./components/Header/index.js";
+import NewOrders from "./pages/NewOrders.js";
 
 function App() {
   return (
-    <Router>  
+    <Router> 
       <Routes>
         <Route path="/" element={<Login/>} />
-        <Route path="/products" element={<Products />} />  
+        <Route path="/home" element={<Home />} />  
+        <Route path="/orders" element={<Orders />} />  
+        <Route path="/new-order" element={<NewOrders />} />  
       </Routes>
     </Router>
   );

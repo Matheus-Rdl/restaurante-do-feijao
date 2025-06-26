@@ -1,0 +1,10 @@
+.nav-cart {
+    width: 275px;
+    background-color: rgb(210, 106, 74);
+    position: fixed;
+    height: 100%;
+    right: 0;
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px black;
+    z-index: 80;
+}

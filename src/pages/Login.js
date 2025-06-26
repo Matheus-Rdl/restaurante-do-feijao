@@ -12,8 +12,8 @@ const Login = () => {
         <TextFieldLogin label="Usuário:" />
         <TextFieldLogin label="Senha:" />
       </div>
-      <Link to={"/products"}>
-      <button className="btn-login">Teste</button>
+      <Link to={"/orders"}>
+      <button className="btn-login">Entrar</button>
       </Link>
     </div>
   );

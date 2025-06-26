@@ -1,0 +1,43 @@
+.div-cardproduct{
+  width: 250px;
+  height: 225px;
+  border-radius: 16px;
+  background-color: brown;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid brown;
+}
+
+.div-cardproduct .img{
+    font-size: 80px;
+    border-radius: 14px 14px 0 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-cardproduct p {
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin: 8px 16px;
+}
+
+.content-cardproduct{
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-cardproduct input[type="checkbox"] {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  accent-color: #4caf50;
+  margin: 32px 32px 0 0;
+}
