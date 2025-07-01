@@ -3,8 +3,14 @@ import CardProducts from "../components/CardProducts";
 import CardSideBarProducts from "../components/CardSideBarProducts";
 import Header from "../components/Header";
 import "../css/NewOrders.css";
+import { useLocation } from "react-router-dom";
 
 const NewOrders = () => {
+  const location = useLocation();
+  const { table, numPeople } = location.state || {};
+
+  const [people, setPeople] = useState(numPeople);
+
   const [screenProducts, setScreenProducts] = useState("Principais");
   const [selectedItems, setSelectedItems] = useState([]);
 
@@ -35,7 +41,7 @@ const NewOrders = () => {
     <>
       <Header />
 
-      {/*Lista que msotra os produtos selecionados */}
+      {/*Lista que mostra os produtos selecionados */}
       <div className="nav-cart">
         <div>
           <h3>Produtos Selecionados:</h3>
@@ -72,6 +78,13 @@ const NewOrders = () => {
       {/*Função que mostra os produtos de acordo com o filtro*/}
       <div className="main div-newOrder">
         <p className="title-newOrder">Novo Pedido</p>
+        <div>
+          <p>Mesa: {table}</p>
+          <p>
+            Quantidade de pessoas: {people}
+            {/*<input value={people} onChange={(e) => setPeople(e.target.value)} ></input>*/}
+          </p>
+        </div>
         <div>
           {screenProducts === "Principais" && (
             <div className="products-newOrder">

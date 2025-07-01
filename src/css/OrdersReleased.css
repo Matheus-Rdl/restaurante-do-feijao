@@ -1,0 +1,14 @@
+.divOrdersReleased {
+  flex-direction: column;
+}
+
+.title-OrdersReleased {
+  font-size: 22px;
+}
+
+.dataOrdersReleased {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}

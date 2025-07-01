@@ -59,7 +59,7 @@ const Orders = () => {
                     to={"/new-order"}
                     state={{
                       table: table,
-                      pessoas: numPeople,
+                      numPeople: numPeople,
                     }}
                   >
                     <button className="btn btn-finish">Continuar</button>
@@ -71,7 +71,9 @@ const Orders = () => {
         )}
         <p className="title-orders">Lançamentos</p>
         <div>
-          <CardMenu title="Salão" />
+          <Link to={"/orders-released"}>
+            <CardMenu title="Salão" />
+          </Link>
         </div>
       </div>
     </>

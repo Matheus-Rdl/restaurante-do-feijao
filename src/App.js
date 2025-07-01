@@ -1,11 +1,11 @@
-import NavSideBar from "./components/NavSideBar";
+
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login.js";
 import Home from "./pages/Home.js";
 import Orders from "./pages/Orders.js";
-import Header from "./components/Header/index.js";
 import NewOrders from "./pages/NewOrders.js";
+import OrdersReleased from "./pages/OrdersReleased.js";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
         <Route path="/home" element={<Home />} />  
         <Route path="/orders" element={<Orders />} />  
         <Route path="/new-order" element={<NewOrders />} />  
+        <Route path="/orders-released" element={<OrdersReleased />} />  
       </Routes>
     </Router>
   );
